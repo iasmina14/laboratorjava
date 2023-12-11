@@ -1,6 +1,7 @@
 package laborator10;
 
 import jdk.internal.jimage.ImageStrings;
+//hjkhlkj
 
 import java.awt.*;
 import java.awt.event.*;
