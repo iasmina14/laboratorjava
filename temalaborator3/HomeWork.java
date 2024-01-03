@@ -3,10 +3,10 @@ package temalaborator3;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class HomeWork {
-    String[] firstArray = new String[]{"java", "test", "university"};
-    String[] secondArray = new String[]{"car", "university", "plane"};
+    public String[] firstArray = new String[]{"java", "test", "university"};
+    public String[] secondArray = new String[]{"car", "university", "plane"};
 
-    static String[] findCommonElements(String[] arrayOne, String[] arrayTwo) {
+    public static String[] findCommonElements(String[] arrayOne, String[] arrayTwo) {
         ArrayList<String> commonElements = new ArrayList<String>();
 
         for (int i = 0; i < arrayOne.length; i++) {
@@ -20,7 +20,7 @@ public class HomeWork {
         return commonElements.toArray(new String[0]);
     }
 
-    static void showFibonnaciString() {
+    public static void showFibonnaciString() {
         Scanner myObj = new Scanner(System.in);
         System.out.println("N=");
 
@@ -79,27 +79,5 @@ public class HomeWork {
         String reversedNumStr = new StringBuilder(numStr).reverse().toString();
 
         return numStr.equals(reversedNumStr);
-    }
-
-    static String showMiddleString(String string) {
-        if (string.length() % 2 == 0) {
-            char middleChar1 = string.charAt(string.length() / 2 - 1);
-            char middleChar2 = string.charAt(string.length() / 2);
-            return String.valueOf(middleChar1) + String.valueOf(middleChar2);
-        } else {
-            char middleChar = string.charAt(string.length() / 2);
-            return String.valueOf(middleChar);
-        }
-    }
-
-    static int sum(int number) {
-        int sum = 0;
-        while (number != 0) {
-            int lastNumber = number % 10;
-            number = number / 10;
-            sum += lastNumber;
-        }
-
-        return sum;
     }
 }
