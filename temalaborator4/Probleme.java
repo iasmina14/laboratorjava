@@ -54,7 +54,7 @@ public class Probleme {
             System.out.println("Courses: " + Arrays.toString(profesor.getCourses()));
         }
 
-        // Problema 1 - Metoda pentru a obține caracterele din mijloc
+        // Problema 1
         static String getMiddleChars(String str) {
             int length = str.length();
             int middleIndex = length / 2;
@@ -66,7 +66,7 @@ public class Probleme {
             }
         }
 
-        // Problema 2 - Metoda pentru a obține suma cifrelor unui număr întreg
+        // Problema 2
         static int getDigitSum(int number) {
             int sum = 0;
 
@@ -79,18 +79,18 @@ public class Probleme {
             return sum;
         }
 
-        // Problema 3 - Clasa Dog
+        // Problema 3
         static class Dog {
             private String name;
             private String breed;
 
-            // Constructor
+
             public Dog(String name, String breed) {
                 this.name = name;
                 this.breed = breed;
             }
 
-            // Getter și Setter pentru name
+
             public String getName() {
                 return name;
             }
@@ -99,7 +99,7 @@ public class Probleme {
                 this.name = name;
             }
 
-            // Getter și Setter pentru breed
+
             public String getBreed() {
                 return breed;
             }
@@ -109,14 +109,14 @@ public class Probleme {
             }
         }
 
-        // Problema 3 - Metodă pentru a afișa detaliile câinelui
+        // Problema 3
         static void displayDogDetails(Dog dog) {
             System.out.println("Name: " + dog.getName());
             System.out.println("Breed: " + dog.getBreed());
             System.out.println();
         }
 
-        // Problema 4 - Clasa Rectangle
+        // Problema 4
         static class Rectangle {
             private double width;
             private double length;
@@ -145,7 +145,7 @@ public class Probleme {
                 this.length = length;
             }
 
-            // Metode pentru calculul ariei și perimetrului
+
             public double calculateArea() {
                 return width * length;
             }
@@ -155,7 +155,7 @@ public class Probleme {
             }
         }
 
-        // Problema 5 - Clasa Person
+        // Problema 5
         static class Person {
             private String name;
             private String email;
@@ -166,7 +166,7 @@ public class Probleme {
                 this.email = email;
             }
 
-            // Getter și Setter pentru name
+
             public String getName() {
                 return name;
             }
@@ -185,17 +185,17 @@ public class Probleme {
             }
         }
 
-        // Problema 6 - Clasa Student care moștenește clasa Person
+        // Problema 6
         static class Student extends Person {
             private int[] grades;
 
-            // Constructor
+
             public Student(String name, String email, int[] grades) {
                 super(name, email);
                 this.grades = grades;
             }
 
-            // Getter și Setter pentru grades
+
             public int[] getGrades() {
                 return grades;
             }
@@ -205,17 +205,17 @@ public class Probleme {
             }
         }
 
-        // Problema 7 - Clasa Profesor care moștenește clasa Person
+        // Problema 7
         static class Profesor extends Person {
             private String[] courses;
 
-            // Constructor
+
             public Profesor(String name, String email, String[] courses) {
                 super(name, email);
                 this.courses = courses;
             }
 
-            // Getter și Setter pentru courses
+
             public String[] getCourses() {
                 return courses;
             }
