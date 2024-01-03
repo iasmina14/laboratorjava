@@ -3,8 +3,8 @@ package temalaborator3;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class HomeWork {
-    String[] firstArray = new String[]{"java","test", "university"};
-    String[] secondArray = new String[]{"car","university", "plane"};
+    String[] firstArray = new String[]{"java", "test", "university"};
+    String[] secondArray = new String[]{"car", "university", "plane"};
 
     static String[] findCommonElements(String[] arrayOne, String[] arrayTwo) {
         ArrayList<String> commonElements = new ArrayList<String>();
@@ -81,7 +81,7 @@ public class HomeWork {
         return numStr.equals(reversedNumStr);
     }
 
-    static String showMiddleString(String string){
+    static String showMiddleString(String string) {
         if (string.length() % 2 == 0) {
             char middleChar1 = string.charAt(string.length() / 2 - 1);
             char middleChar2 = string.charAt(string.length() / 2);
@@ -92,37 +92,14 @@ public class HomeWork {
         }
     }
 
-    static int sum(int number){
+    static int sum(int number) {
         int sum = 0;
-        while(number!=0){
-            int lastNumber = number%10;
-            number=number/10;
-            sum+=lastNumber;
+        while (number != 0) {
+            int lastNumber = number % 10;
+            number = number / 10;
+            sum += lastNumber;
         }
 
         return sum;
-    }
-
-    public static void main(String[] args) {
-        int[] numbers = {2, 3, 5, 7, 11, 12, 13, 17, 19, 20, 21, 22};
-        int num1 = 121;
-
-        HomeWork problems = new HomeWork();
-
-        String[] result = problems.findCommonElements(problems.firstArray, problems.secondArray);
-        for (String element : result) {
-            System.out.println(element);
-        }
-
-        problems.showFibonnaciString();
-
-        problems.findPrimeNumbers(numbers);
-
-        System.out.println(num1 + (problems.isPalindrome(num1) ? " este" : " nu este") + " palindrom \n");
-
-        System.out.println(problems.showMiddleString("masina"));
-
-        System.out.println("Suma: " + problems.sum(254));
-
     }
 }
